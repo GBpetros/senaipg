@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Institucional SENAI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .menu_top {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu_top h1 {
+      margin: 0;
+    }
+
+    .menu_top nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 30px;
+    }
+
+    .section h2 {
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .cursos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .curso {
+      background-color: #eeeeee;
+      padding: 20px;
+      flex: 1 1 calc(33.33% - 20px);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .contato-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contato-item img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    @media (max-width: 768px) {
+      .cursos {
+        flex-direction: column;
+      }
+
+      .curso {
+        flex: 1 1 100%;
+      }
+
+      .menu_top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu_top nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Menu -->
+    <div class="menu_top">
+      <h1>SENAI</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+
+    <!-- Seção Sobre -->
+    <div class="section" id="sobre">
+      <h2>Sobre o SENAI</h2>
+      <p>
+        O SENAI - Serviço Nacional de Aprendizagem Industrial é uma das principais instituições de educação profissional do Brasil.
+        Com foco em inovação e tecnologia, o SENAI prepara jovens e adultos para o mercado de trabalho com cursos técnicos, profissionalizantes e de aperfeiçoamento.
+      </p>
+    </div>
+
+    <!-- Seção Cursos -->
+    <div class="section" id="cursos">
+      <h2>Cursos Técnicos</h2>
+      <div class="cursos">
+        <div class="curso">Técnico em Informática</div>
+        <div class="curso">Técnico em Mecânica</div>
+        <div class="curso">Técnico em Eletrotécnica</div>
+        <div class="curso">Técnico em Logística</div>
+        <div class="curso">Técnico em Segurança do Trabalho</div>
+      </div>
+    </div>
+
+    <!-- Seção Contato -->
+    <div class="section" id="contato">
+      <h2>Contato</h2>
+      <div class="contato-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25325.png" alt="Endereço">
+        <span>Rua Fictícia, 123 - Centro - Cidade/UF</span>
+      </div>
+      <div class="contato-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126509.png" alt="Telefone">
+        <span>(99) 99999-9999</span>
+      </div>
+      <div class="contato-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="E-mail">
+        <span>contato@senai.com.br</span>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+      © 2025 SENAI - Serviço Nacional de Aprendizagem Industrial
+    </div>
+  </div>
+</body>
+</html>
